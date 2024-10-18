@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="display"></p>
+
+      <div class="calculator-button">
+        <button
+          class="calculator-keys one"
+          onclick="
+                calculation += '1';
+                displayCalculation();
+            "
+        >
+          1
+        </button>
+        <button
+          class="calculator-keys two"
+          onclick="
+                calculation += '2';
+                displayCalculation();
+            "
+        >
+          2
+        </button>
+        <button
+          class="calculator-keys three"
+          onclick="
+                calculation += '3';
+                displayCalculation();
+            "
+        >
+          3
+        </button>
+        <button
+          class="calculator-keys four"
+          onclick="
+                calculation += '4';
+                displayCalculation();
+            "
+        >
+          4
+        </button>
+        <button
+          class="calculator-keys five"
+          onclick="
+                calculation += '5';
+                displayCalculation();
+            "
+        >
+          5
+        </button>
+        <button
+          class="calculator-keys six"
+          onclick="
+                calculation += '6';
+                displayCalculation();
+            "
+        >
+          6
+        </button>
+        <button
+          class="calculator-keys seven"
+          onclick="
+                calculation += '7';
+                displayCalculation();
+            "
+        >
+          7
+        </button>
+        <button
+          class="calculator-keys eight"
+          onclick="
+                calculation += '8';
+                displayCalculation();
+            "
+        >
+          8
+        </button>
+        <button
+          class="calculator-keys nine"
+          onclick="
+                calculation += '9';
+                displayCalculation();
+            "
+        >
+          9
+        </button>
+        <button
+          class="calculator-keys zero"
+          onclick="
+                calculation += '0';
+                displayCalculation();
+            "
+        >
+          0
+        </button>
+        <button
+          class="calculator-keys add"
+          onclick="
+                calculation += ' + ';
+                displayCalculation();
+            "
+        >
+          <img src="./Images/addition.jpg" alt="" />
+        </button>
+        <button
+          class="calculator-keys subtract"
+          onclick="
+                calculation += ' - ';
+                displayCalculation();
+            "
+        >
+          <img src="./Images/subtraction.jpg" alt="" />
+        </button>
+        <button
+          class="calculator-keys multiply"
+          onclick="
+                calculation += ' * ';
+                displayCalculation();
+            "
+        >
+          <img src="./Images/multiplication.png" alt="" />
+        </button>
+        <button
+          class="calculator-keys divide"
+          onclick="
+                calculation += ' / ';
+                displayCalculation();
+            "
+        >
+          <img src="./Images/division.png" alt="" />
+        </button>
+        <button
+          class="calculator-keys dot"
+          onclick="
+                calculation += '.';
+                displayCalculation();
+            "
+        >
+          .
+        </button>
+        <button
+          class="calculator-keys equals"
+          onclick="
+                calculation = eval(calculation);
+                displayCalculation();
+            "
+        >
+          =
+        </button>
+        <button
+          class="calculator-keys c"
+          onclick="
+                removeCalculation();
+            "
+        >
+          C
+        </button>
+        <button
+          class="calculator-keys delete"
+          onclick="
+                deleteLastCharacter();
+            "
+        >
+          <img src="./Images/delete.png" alt="" />
+        </button>
+        <button
+          class="calculator-keys percentage"
+          onclick="
+                calculation /= '100';
+                displayCalculation();
+            "
+        >
+          %
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
